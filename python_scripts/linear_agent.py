@@ -14,9 +14,9 @@ class Agent:
 
     def __init__(self):
         self.num_games = 0
-        self.randomness = 0 
-        self.gamma = 0.9 # discount rate
-        self.memory = deque(maxlen=MAX_MEMORY) # popleft()
+        self.randomness = 0
+        self.gamma = 0.9
+        self.memory = deque(maxlen=MAX_MEMORY)
         self.model = Linear_QNet(11, 256, 3)
         self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma)
 
@@ -140,7 +140,9 @@ def train():
             total_score += score
             mean_score = total_score / agent.num_games
             plot_mean_scores.append(mean_score)
-            plot(plot_scores, plot_mean_scores)
+            plot(plot_scores, plot_mean_scores, agent.num_games)
+        if agent.num_games > 500:
+            break
 
 
 if __name__ == '__main__':
