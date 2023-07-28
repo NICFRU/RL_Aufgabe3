@@ -2,8 +2,8 @@
 
 ## Aufgabenverteilung 
 
-- Beide Gruppenmitglieder haben den Code über VSCode und der Extension LiveShare gleichzeitig an dem Code gearbeitet 
-- Die Dokumentation wurde dabei auch zusammen über Overleaf verfasst 
+- Beide Gruppenmitglieder haben den Code über VSCode und der Extension LiveShare gleichzeitig bearbeitet
+- Die Dokumentation bzw. der Bericht wurde dabei auch zusammen über die Plattform Overleaf (für LaTeX) verfasst 
 
 ## Installationsanweisungen
 
